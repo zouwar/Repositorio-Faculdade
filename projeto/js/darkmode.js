@@ -18,4 +18,3 @@ button.addEventListener("click", () => {
     // salvar
     localStorage.setItem("dark-mode", isDark);
 });
-console.log("dark mode carregado");
