@@ -7,13 +7,21 @@
     background-color: whitesmoke;
 }
 
+body {}
+
 h1 {
     display: flex;
     justify-content: center;
     padding-bottom: 35px;
 }
 
+p {
+    font-weight: bold;
+}
+
 form {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     margin: 0px auto;
     background: #fff;
@@ -30,6 +38,17 @@ input , select {
     box-shadow: 0 0 5px #bebebe;
 }
 
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:user-invalid {
+    border: 2px solid red;
+}
+
+
+
 button {
     width: 100%;
     margin-top: 10px;
@@ -39,3 +58,20 @@ button {
     border: none;
     cursor: pointer; 
 }
+
+#snome , #smail ,  #ssenha , #scsenha{
+    display: none;
+    color: red;
+    font-size: 12px;
+    }
+
+    #nomec:user-invalid + #snome , #email:user-invalid + #smail , #senha:user-invalid + #ssenha , #consenha:user-invalid + #scsenha {
+        display: block;
+    }
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+

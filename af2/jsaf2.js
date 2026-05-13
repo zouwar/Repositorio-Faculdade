@@ -1,13 +1,20 @@
-var senha = document.getElementById("senha")
-  , consenha = document.getElementById("consenha");
+// fazer data de nascimento nser maior que dia atual
+//fazer confirmação de senha
+//fazer que caso a opção de genero seja ''outra'' digitar
 
-function validatePassword(){
-  if(senha.value != consenha.value) {
-    consenha.setCustomValidity("Senhas diferentes!");
+let senha = document.getElementById('senha');
+let senhaC = document.getElementById('senhaC');
+
+function validarSenha() {
+  if (senha.value != senhaC.value) {
+    senhaC.setCustomValidity("Senhas diferentes!");
+    senhaC.reportValidity();
+    return false;
   } else {
-    consenha.setCustomValidity('');
+    senhaC.setCustomValidity("");
+    return true;
   }
 }
 
-senha.onchange = validatePassword;
-consenha.onkeyup = validatePassword;
+
+senhaC.addEventListener('input', validarSenha);

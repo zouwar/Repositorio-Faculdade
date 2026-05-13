@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<style>
+    input[type="date"]:invalid {
+        border: 2px solid red;
+    }
+</style>
+</head>
+<body>
+
+<input type="date" id="dataInput">
+
+<script>
+    // Executa assim que a página carrega
+    const input = document.getElementById('dataInput');
+    const hoje = new Date().toISOString().split('T')[0];
+    input.setAttribute('max', hoje);
+</script>
+
+</body>
+</html>
