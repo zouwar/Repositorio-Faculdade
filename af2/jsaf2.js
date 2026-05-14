@@ -1,6 +1,6 @@
 // fazer data de nascimento nser maior que dia atual {OK!}
 //fazer confirmação de senha {OK!}
-//fazer que caso a opção de genero seja ''outra'' digitar
+//fazer que caso a opção de genero seja ''outra'' digitar {OK!}
 
 let senha = document.getElementById('senha');
 let consenha = document.getElementById('consenha');
@@ -51,26 +51,19 @@ const selectGenero = document.getElementById("genero");
 
     // confirmação de email \/
 
-    const emailInput = document.getElementById("email");
-    const mensagemErro = document.getElementById("smail");
+    const email = document.getElementById("email");
+    const smail = document.getElementById("smail");
 
-    emailInput.addEventListener("input", function () {
+    email.addEventListener("input", function () {
 
-        
-        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@][.com]+$/;
 
-        if (regex.test(emailInput.value)) {
-
-            
-            emailInput.style.border = "2px solid green";
-            mensagemErro.textContent = "";
-
+        if (regexEmail.test(email.value)) {
+            smail.textContent = "E-mail válido!";
+            smail.style.color = "green";
         } else {
-
-            
-            emailInput.style.border = "2px solid red";
-            // mensagemErro.textContent = "Digite um e-mail válido terminado em .com";
-
+            smail.textContent = "Algo está errado! confirme o email.";
+            smail.style.color = "red";
         }
 
     });

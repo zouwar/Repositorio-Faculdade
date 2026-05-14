@@ -63,13 +63,13 @@ button {
     cursor: pointer; 
 }
 
-#snome , #smail ,  #ssenha , #scsenha{
+#snome , #ssenha , #scsenha{
     display: none;
     color: red;
     font-size: 12px;
     }
 
-    #nomec:user-invalid + #snome , #email:user-invalid + #smail , #senha:user-invalid + #ssenha , #consenha:user-invalid + #scsenha {
+    #nomec:user-invalid + #snome , #senha:user-invalid + #ssenha , #consenha:user-invalid + #scsenha {
         display: block;
     }
 
