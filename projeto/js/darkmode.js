@@ -11,5 +11,6 @@ button.addEventListener("click", () => {
     // trocar ícone
     button.textContent = isDark ? "☀️" : "🌙";
     // salvar
+    button.textContent = isDark ? "☀️" : "🌙";
     localStorage.setItem("dark-mode", isDark);
 });
