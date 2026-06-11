@@ -36,7 +36,7 @@ nav > a:hover {
     cursor: pointer;
 }
 
-#toggleDark {
+#modoEscuro {
     position: absolute;
     right: 20px;
     top: 5px;
@@ -50,7 +50,7 @@ nav > a:hover {
     transition: transform 0.3s;
 }
 
-#toggleDark:hover {
+#modoEscuro:hover {
     transform: scale(1.2);
 }
 
