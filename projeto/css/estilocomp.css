@@ -39,21 +39,23 @@ nav > a:hover {
 }
 
 /* BOTÃO DARK */
-#toggleDark {
+#modoEscuro {
     position: absolute;
     right: 20px;
     top: 5px;
-
+    width: auto;
+    margin: 0;
+    padding: 0;
     background: none;
     border: none;
+    box-shadow: none;
     font-size: 20px;
     cursor: pointer;
     color: white;
-
     transition: transform 0.3s;
 }
 
-#toggleDark:hover {
+#modoEscuro:hover {
     transform: scale(1.2);
 }
 
@@ -87,31 +89,24 @@ footer {
     padding: 20px;
 }
 
-/* ========================= */
 /* 🌙 MODO ESCURO */
-/* ========================= */
-
 body.dark-mode {
     background-color: #0f172a;
     color: #ffffff;
 }
-
 /* Navbar */
 body.dark-mode nav {
     background-color: #000;
 }
-
 /* Links */
 body.dark-mode nav > a {
     color: #ffffff;
 }
-
 body.dark-mode nav > a:hover {
     color: #bb86fc;
 }
-
 /* Botão muda cor */
-body.dark-mode #toggleDark {
+body.dark-mode #modoEscuro {
     color: #facc15;
 }
 

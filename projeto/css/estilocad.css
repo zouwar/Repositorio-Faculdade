@@ -35,3 +35,32 @@ body {
         button:hover {
             background: #218838;
         }
+
+body.dark-mode {
+    background-color: #0f172a;
+    color: white;
+}
+body.dark-mode .container {
+    background-color: #1e293b;
+    box-shadow: 0 0 10px #000;
+}
+body.dark-mode input {
+    background-color: #334155;
+    color: white;
+    border: 1px solid #64748b;
+}
+body.dark-mode input::placeholder {
+    color: #cbd5e1;
+}
+body.dark-mode label,
+body.dark-mode h2 {
+    color: white;
+}
+#modoEscuro {
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
