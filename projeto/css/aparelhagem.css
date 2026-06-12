@@ -225,3 +225,15 @@ nav{
     width: 100%;
     z-index: 1000;
 }
+
+body.dark-mode main,
+body.dark-mode section {
+    background-color: #0f172a;
+    color: white;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: white;
+}

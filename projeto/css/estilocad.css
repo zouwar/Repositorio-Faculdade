@@ -9,46 +9,6 @@ body {
   margin: 0;
 }
 
-header {
-  width: 100%;
-  background: #111;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0.9rem 2rem;
-  position: relative;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-nav a:hover { color: #2a9d45; }
-
-#modoEscuro {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  transition: transform 0.3s;
-  padding: 0;
-}
-
-#modoEscuro:hover { transform: translateY(-50%) scale(1.2); }
-
 .page-wrapper {
   min-height: calc(100vh - 48px);
   display: flex;
@@ -423,3 +383,4 @@ body.dark-mode .logo-panel { filter: brightness(0.85); }
     padding: 2rem 1.5rem 2.5rem;
   }
 }
+

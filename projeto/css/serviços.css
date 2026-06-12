@@ -72,3 +72,18 @@ header p{
 .card a:hover{
     background: #688b77;
 }
+
+body.dark-mode .semi-header {
+    background: #0f172a;
+    color: #ffffff;
+}
+body.dark-mode .semi-header p {
+    color: #cccccc;
+}
+body.dark-mode .container {
+    background: #0f172a;
+}
+body.dark-mode .card {
+    background: #ffffff;
+    color: #333333;
+}
