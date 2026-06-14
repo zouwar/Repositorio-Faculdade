@@ -3,6 +3,7 @@ form.addEventListener("submit", function(e){
     e.preventDefault();
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
+    let lembrarSenha = document.getElementById("lembrarSenha");
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     console.log(usuarios);
     let loginCorreto = false;
