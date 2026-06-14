@@ -1,16 +1,10 @@
 @charset "UTF-8";
 
 *{
-<<<<<<< Updated upstream
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-}
-
-body {
-    background: linear-gradient(180deg,#E2DECE 0%,#d5d0c2 100%);
-    min-height: 100vh;
 }
 
 header {
@@ -18,53 +12,6 @@ header {
     box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
 
-nav {
-    background: linear-gradient(to bottom, black, #c9c9c936);
-    width: 100%;
-    height: 40px;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-nav > a {
-    text-decoration: none;
-    color: whitesmoke;
-    margin: 0 40px;
-    font-size: 18px;
-}
-
-nav > a:hover {
-    color: blue;
-    cursor: pointer;
-}
-
-#modoEscuro {
-    position: absolute;
-    right: 20px;
-    top: 5px;
-
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
-
-    transition: transform 0.3s;
-}
-
-#modoEscuro:hover {
-    transform: scale(1.2);
-}
-
-=======
-    font-family: "Poppins", sans-serif;
-}
-
->>>>>>> Stashed changes
 .container {
     width: 85%;
     max-width: 1000px;
@@ -101,7 +48,6 @@ nav > a:hover {
     font-weight: 500;
 }
 
-//DARK MODE - LOCALIZAÇÃO//
 body.dark-mode {
     background-color: #0b1738;
 }
