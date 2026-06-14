@@ -1,8 +1,6 @@
 function verificarLogin() {
 
-    const usuarioLogado = JSON.parse(
-        localStorage.getItem("usuarioLogado")
-    );
+    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 
     if (!usuarioLogado) {
         alert("Cadastre-se e faça login para continuar.");
@@ -12,3 +10,5 @@ function verificarLogin() {
 
     return usuarioLogado;
 }
+
+verificarLogin();
