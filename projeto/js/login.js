@@ -1,4 +1,24 @@
 let form = document.getElementById("formLogin");
+window.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        let emailSalvo =
+        localStorage.getItem(
+            "emailSalvo"
+        );
+
+        if(emailSalvo){
+            document.getElementById(
+                "email"
+            ).value = emailSalvo;
+
+            document.getElementById(
+                "lembrarSenha"
+            ).checked = true;
+        }
+    }
+);
 form.addEventListener("submit", function(e){
     e.preventDefault();
     let email = document.getElementById("email").value;
@@ -19,8 +39,17 @@ form.addEventListener("submit", function(e){
             );
         }
     }
-    if(loginCorreto){
-        alert("Login realizado!");
+    if(loginCorreto){ 
+      if(lembrarSenha.checked){
+    localStorage.setItem(
+        "emailSalvo",
+        email
+    );
+}else{
+    localStorage.removeItem(
+        "emailSalvo"
+    );
+}  alert("Login realizado!");
         window.location.href = "../index.html";
     }else{
         document.getElementById("mensagem").innerHTML =
